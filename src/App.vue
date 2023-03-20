@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <Header :btnIcon="headerContent" :btnLink="headerContent"/>
   <router-view/>
 </template>
+<script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+import Header from '@/components/header.vue'
+export default {
+  components: {
+    Header
+  },
+  data() {
+    return {
+      headerContent: [
+        {icon: "", link: "/liked"},
+        {icon: "", link: "/notifications"},
+        {icon: "", link: "/settings"},
+        {icon: "", link: "/profile"},
+      ]
     }
   }
+}
+</script>
+<style lang="scss">
+body{
+  background: #F6F7F9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
