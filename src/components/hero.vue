@@ -12,6 +12,7 @@
 			<img src="@/assets/img/image7.png" alt="" class="hero_imago_logo" />
 		</div>
 	</div>
+	<div>test</div>
 </template>
 
 <script>
