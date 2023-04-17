@@ -18,4 +18,12 @@
 		padding: 0;
 		box-sizing: border-box;
 	}
+	.hero_BG1{
+		background: url(@/assets/img/heroBG.png) center/100% no-repeat;
+		object-fit: cover;
+	}
+	.hero_BG2{
+		background: url(@/assets/img/heroBG2.png) center/100% no-repeat;
+		object-fit: cover;
+	}
 </style>

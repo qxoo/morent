@@ -145,7 +145,12 @@
 			justify-content: flex-end;
 			padding: 0px;
 			gap: 20px;
-
+			:last-child {
+				img {
+					width: 48px;
+					border-radius: 50%;
+				}
+			}
 			&__btn {
 				width: 50px;
 				display: flex;
@@ -165,10 +170,6 @@
 				&__icon {
 					object-fit: cover;
 					width: 20px;
-					&:last-child {
-						width: 48px;
-						border-radius: 50%;
-					}
 				}
 			}
 		}
