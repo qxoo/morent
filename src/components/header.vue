@@ -97,6 +97,7 @@
 		justify-content: flex-start;
 		padding: 0 30px;
 		gap: 4.4%;
+		background: white;
 		&_logo {
 			font-family: "Plus Jakarta Sans", sans-serif;
 			font-style: normal;
